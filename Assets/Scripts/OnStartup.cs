@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class OnStartup : MonoBehaviour
 {
 
-    public List<GameObject> cardSprites;
+    public List<Image> cardImages;
     public List<Sprite> hearts;
     public List<Sprite> clubs;
     public List<Sprite> spades;
@@ -19,12 +20,10 @@ public class OnStartup : MonoBehaviour
          *
          * 1. Поменять рисунок на случайный
          */
-        foreach (var sprite in cardSprites)
+        foreach (var image in cardImages)
         {
-        
-            var instantiate = Instantiate(sprite);
             var randomSprite = getRandomSprite();
-            instantiate.GetComponent<SpriteRenderer>().sprite = randomSprite;
+            image.sprite = randomSprite;
         }
     }
     
