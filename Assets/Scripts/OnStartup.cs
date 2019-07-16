@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -24,6 +25,8 @@ public class OnStartup : MonoBehaviour
         {
             var randomSprite = getRandomSprite();
             image.sprite = randomSprite;
+            var userData = image.GetComponent<UserData>();
+            userData.description = "КОРОЛЬ МЕЧЕЙ!";
         }
     }
     
