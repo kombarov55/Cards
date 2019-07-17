@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\CardsService.cs" />
      <Compile Include="Assets\Scripts\CardSuit.cs" />
      <Compile Include="Assets\Scripts\CardValue.cs" />
+     <Compile Include="Assets\Scripts\FadeOut.cs" />
      <Compile Include="Assets\Scripts\OnButtonPressed.cs" />
      <Compile Include="Assets\Scripts\OnStartup.cs" />
      <Compile Include="Assets\Scripts\UserData.cs" />
