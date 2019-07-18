@@ -1,50 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using DefaultNamespace;
 using UnityEngine;
-using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
-public class OnStartup : MonoBehaviour
+namespace DefaultNamespace
 {
+    public class OnStartup : MonoBehaviour
+    {
 
-    public List<Image> cardImages;
-    public List<Sprite> hearts;
-    public List<Sprite> clubs;
-    public List<Sprite> spades;
-    public List<Sprite> diamonds;
+        public CardService cardService;
     
-    void Start()
-    {
-        refresh();
-    }
-
-    public void refresh()
-    {
-        foreach (var image in cardImages)
+        void Start()
         {
-            var randomSprite = getRandomSprite();
-            image.sprite = randomSprite;
-            var userData = image.GetComponent<UserData>();
-            userData.description = "КОРОЛЬ МЕЧЕЙ!";
-        }        
-    }
-    
-    private Sprite getRandomSprite()
-    {
-        var range = Random.Range(0, 4);
-        switch (range)
-        {
-            case 0:
-                return hearts[Random.Range(0, hearts.Count)];
-            case 1:
-                return clubs[Random.Range(0, clubs.Count)];
-            case 2:
-                return spades[Random.Range(0, spades.Count)];
-            case 3:
-                return diamonds[Random.Range(0, diamonds.Count)];
-            
-            default: throw new Exception("Random.range(0, 4) returned " + range + ". impossible.");
+            cardService.Refresh();
         }
     }
 }

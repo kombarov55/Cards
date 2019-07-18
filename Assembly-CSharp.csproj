@@ -55,8 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Refresh.cs" />
      <Compile Include="Assets\Scripts\Card.cs" />
+     <Compile Include="Assets\Scripts\CardService.cs" />
      <Compile Include="Assets\Scripts\CardsService.cs" />
      <Compile Include="Assets\Scripts\CardSuit.cs" />
      <Compile Include="Assets\Scripts\CardValue.cs" />
