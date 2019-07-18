@@ -16,18 +16,18 @@ public class OnStartup : MonoBehaviour
     
     void Start()
     {
-        /*
-         * По каждой из карт:
-         *
-         * 1. Поменять рисунок на случайный
-         */
+        refresh();
+    }
+
+    public void refresh()
+    {
         foreach (var image in cardImages)
         {
             var randomSprite = getRandomSprite();
             image.sprite = randomSprite;
             var userData = image.GetComponent<UserData>();
             userData.description = "КОРОЛЬ МЕЧЕЙ!";
-        }
+        }        
     }
     
     private Sprite getRandomSprite()

@@ -11,9 +11,8 @@ namespace DefaultNamespace
         public float duration;
 
         private Image imageToFadeOut;
-        
-        
-        public void Awake()
+
+        public void Act()
         {
             imageToFadeOut = GetComponent<Image>();
             StartCoroutine(FadeOutCoroutine());
@@ -21,7 +20,6 @@ namespace DefaultNamespace
 
         public IEnumerator FadeOutCoroutine()
         {
-        
             float frameDuration = 1f / 30f;
             float times = duration / frameDuration;
             float fadePercentPerTime = 1f / times;
