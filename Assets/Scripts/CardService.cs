@@ -17,12 +17,24 @@ public class CardService : MonoBehaviour
     public GameObject rootPanel;
 
     private GameObject currentAlignment;
+    
+    private List<Card> cards = new List<Card>();
+    private List<Card> usedCards = new List<Card>();
 
-    private readonly List<string> dropdownNames = new List<string>
+    private readonly List<string> dropdownNames = new List<string> {"Общий", "На событие"};
+
+    public void Start()
     {
-        "Общий", "На событие"
-    };
+        InitializeCards();
+    }
 
+    private void InitializeCards()
+    {
+        cards.AddRange(GenerateCards(hearts, CardSuit.HEART));
+        cards.AddRange(GenerateCards(clubs, CardSuit.CLUB));
+        cards.AddRange(GenerateCards(spades, CardSuit.SPADE));
+        cards.AddRange(GenerateCards(diamonds, CardSuit.DIAMOND));        
+    }
 
     public void Refresh()
     {
@@ -38,6 +50,7 @@ public class CardService : MonoBehaviour
     public void Clear()
     {
         Destroy(currentAlignment);
+        usedCards.Clear();
     }
 
     public void RenderAlignment()
@@ -48,28 +61,36 @@ public class CardService : MonoBehaviour
 
         foreach (var image in images)
         {
-            var randomSprite = GetRandomSprite();
-            image.sprite = randomSprite;
+            var card = GetRandomCard();
+            image.sprite = card.sprite;
             var userData = image.GetComponent<UserData>();
-            userData.description = "КОРОЛЬ МЕЧЕЙ!";
+            userData.card = card;
         }
     }
     
-    private Sprite GetRandomSprite()
+    private Card GetRandomCard()
     {
-        var range = Random.Range(0, 4);
-        switch (range)
+        var rand = Random.Range(0, cards.Count);
+        var result = cards[rand];
+        usedCards.Add(result);
+        return result;
+    }
+    
+    private List<Card> GenerateCards(List<Sprite> sprites, CardSuit suit)
+    {
+        var cards = new List<Card>();
+        
+        var values = Enum.GetValues(typeof(CardValue)) as CardValue[];
+        var valuesEnum = values.GetEnumerator();
+        
+        foreach (var sprite in sprites)
         {
-            case 0:
-                return hearts[Random.Range(0, hearts.Count)];
-            case 1:
-                return clubs[Random.Range(0, clubs.Count)];
-            case 2:
-                return spades[Random.Range(0, spades.Count)];
-            case 3:
-                return diamonds[Random.Range(0, diamonds.Count)];
+            valuesEnum.MoveNext();
+            var cardValue = (CardValue) valuesEnum.Current;
             
-            default: throw new Exception("Random.range(0, 4) returned " + range + ". impossible.");
+            cards.Add(new Card(suit, cardValue, sprite));
         }
+
+        return cards;
     }
 }

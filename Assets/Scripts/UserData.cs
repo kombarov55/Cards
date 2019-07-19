@@ -4,6 +4,6 @@ namespace DefaultNamespace
 {
     public class UserData : MonoBehaviour
     {
-        public string description;
+        public Card card;
     }
 }
