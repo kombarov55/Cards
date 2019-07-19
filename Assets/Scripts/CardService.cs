@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
-using UnityEngine.XR.WSA.WebCam;
-using Image = UnityEngine.UI.Image;
 using Random = UnityEngine.Random;
 
 public class CardService : MonoBehaviour
@@ -18,12 +15,14 @@ public class CardService : MonoBehaviour
 
     public List<GameObject> alignments;
     public GameObject rootPanel;
-    public GameObject descriptionPopup;
+    public GameObject descriptionPopupPrefab;
 
     private GameObject currentAlignment;
+    private GameObject descriptionPopup;
+    
     
     private List<Card> cards = new List<Card>();
-    private List<Card> usedCards = new List<Card>();
+    private List<Card> usedCards = new List<Card>(); 
 
     private readonly List<string> dropdownNames = new List<string> {"Общий", "На событие"};
 
@@ -34,15 +33,18 @@ public class CardService : MonoBehaviour
 
     public void OpenDescription(Card card)
     {
-        Instantiate(descriptionPopup, rootPanel.transform);
+        descriptionPopup = Instantiate(descriptionPopupPrefab, rootPanel.transform);
         var content = descriptionPopup.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0);
         var img = content.transform.GetChild(0).gameObject.GetComponent<Image>();
         var title = content.transform.GetChild(1).gameObject.GetComponent<Text>();
         var description = content.transform.GetChild(2).gameObject.GetComponent<Text>();
+        var closeButton = descriptionPopup.transform.GetChild(1).gameObject.GetComponent<Button>();
 
         img.sprite = card.sprite;
         title.text = "Новыфй текст!";
         description.text = "1231231231";
+        
+        closeButton.onClick.AddListener(() => Destroy(descriptionPopup));
     }
 
     private void InitializeCards()

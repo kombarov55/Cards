@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409a7be8-00f5-4f4e-a971-ab0ce30995ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bbbfef-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bbbfef-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/62a51c-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/62a51c-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/fe/fea068ead3346d9108e839c54d0d093c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/fea068ead3346d9108e839c54d0d093c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,25 +27,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
+            <state relative-caret-position="257">
+              <caret line="46" column="73" lean-forward="true" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
               <folding>
-                <marker date="1563538793720" expanded="false" signature="6:246" ph="..." />
-                <marker date="1563538793720" expanded="true" signature="288:3300" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="802:841" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="885:1453" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="1489:1763" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="1790:1846" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="1891:1933" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="1958:2032" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="2067:2599" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="2261:2593" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="2633:2782" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="2861:3298" ph="{...}" />
-                <marker date="1563538793720" expanded="true" signature="3083:3269" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="6:147" ph="..." />
+                <marker date="1563558305362" expanded="true" signature="189:3462" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="756:795" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="839:1615" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="1651:1925" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="1952:2008" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="2053:2095" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="2120:2194" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="2229:2761" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="2423:2755" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="2795:2944" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="3023:3460" ph="{...}" />
+                <marker date="1563558305362" expanded="true" signature="3245:3431" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -62,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+              <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
               <folding>
                 <marker date="1563538649003" expanded="true" signature="46:213" ph="{...}" />
                 <marker date="1563538649003" expanded="true" signature="99:211" ph="{...}" />
@@ -72,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+            <state relative-caret-position="180">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding>
                 <marker date="1563536942106" expanded="true" signature="6:50" ph="..." />
                 <marker date="1563536942106" expanded="true" signature="78:406" ph="{...}" />
@@ -90,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state>
               <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             </state>
           </provider>
@@ -111,28 +104,23 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardSuit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnButtonPressed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UserData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/63/3cbfef39/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FadeOut.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardValue.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/55/432ff71b/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/d8/92eaa1d1/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnButtonPressed.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UserData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/63/3cbfef39/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/1c/4f63a9b4/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnStartup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardsService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/48/184241be/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Card.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/55/432ff71b/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/d8/92eaa1d1/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/3b/9dfe858c/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -172,38 +160,10 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="UnityExplorer" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer" />
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Packages" type="4e2708dd:PackagesRoot" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -274,7 +234,8 @@
       <workItem from="1563390401480" duration="1245000" />
       <workItem from="1563439256301" duration="917000" />
       <workItem from="1563474055968" duration="1293000" />
-      <workItem from="1563516635522" duration="14339000" />
+      <workItem from="1563516635522" duration="14369000" />
+      <workItem from="1563557606032" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="Another initial">
       <created>1563301575770</created>
@@ -339,11 +300,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563523652745</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Всё круто!">
+      <created>1563539066490</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563539066490</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36367000" />
+    <option name="totallyTimeSpent" value="37156000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,8 +323,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="20" width="1366" height="727" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="747" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978479" weight="0.2712766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -371,7 +338,7 @@
       <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3248" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.3248" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
@@ -400,7 +367,8 @@
     <MESSAGE value="Добавил обновление карт" />
     <MESSAGE value="Добавил дропдаун" />
     <MESSAGE value="Добавил генерацию карт" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил генерацию карт" />
+    <MESSAGE value="Всё круто!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Всё круто!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,7 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseDescription.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/OnStartupScript.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity">
       <provider selected="true" editor-type-id="text-editor">
@@ -588,13 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardHolder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardHolder.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UserData.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -639,20 +600,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseDescription.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseDescription.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/63/3cbfef39/ExecuteEvents.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -769,23 +717,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-          <folding>
-            <marker date="1563536942106" expanded="true" signature="6:50" ph="..." />
-            <marker date="1563536942106" expanded="true" signature="78:406" ph="{...}" />
-            <marker date="1563536942106" expanded="true" signature="158:404" ph="{...}" />
-            <marker date="1563536942106" expanded="true" signature="277:398" ph="{...}" />
-          </folding>
+        <state>
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/48/184241be/Button.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding>
             <marker date="1563538649003" expanded="true" signature="46:213" ph="{...}" />
             <marker date="1563538649003" expanded="true" signature="99:211" ph="{...}" />
@@ -796,22 +745,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
+        <state relative-caret-position="257">
+          <caret line="46" column="73" lean-forward="true" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
           <folding>
-            <marker date="1563538793720" expanded="false" signature="6:246" ph="..." />
-            <marker date="1563538793720" expanded="true" signature="288:3300" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="802:841" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="885:1453" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="1489:1763" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="1790:1846" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="1891:1933" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="1958:2032" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="2067:2599" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="2261:2593" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="2633:2782" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="2861:3298" ph="{...}" />
-            <marker date="1563538793720" expanded="true" signature="3083:3269" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="6:147" ph="..." />
+            <marker date="1563558305362" expanded="true" signature="189:3462" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="756:795" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="839:1615" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="1651:1925" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="1952:2008" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="2053:2095" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="2120:2194" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="2229:2761" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="2423:2755" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="2795:2944" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="3023:3460" ph="{...}" />
+            <marker date="1563558305362" expanded="true" signature="3245:3431" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <marker date="1563536942106" expanded="true" signature="6:50" ph="..." />
+            <marker date="1563536942106" expanded="true" signature="78:406" ph="{...}" />
+            <marker date="1563536942106" expanded="true" signature="158:404" ph="{...}" />
+            <marker date="1563536942106" expanded="true" signature="277:398" ph="{...}" />
           </folding>
         </state>
       </provider>
