@@ -8,14 +8,21 @@ using Random = UnityEngine.Random;
 public class CardService : MonoBehaviour
 {
 
-    public List<Image> cardImages;
     public List<Sprite> hearts;
     public List<Sprite> clubs;
     public List<Sprite> spades;
-    public List<Sprite> diamonds;
+    public List<Sprite> diamonds; 
 
-    public GameObject alignment;
+    public List<GameObject> alignments;
     public GameObject rootPanel;
+
+    private GameObject currentAlignment;
+
+    private readonly List<string> dropdownNames = new List<string>
+    {
+        "Общий", "На событие"
+    };
+
 
     public void Refresh()
     {
@@ -23,20 +30,24 @@ public class CardService : MonoBehaviour
         RenderAlignment();
     }
 
+    public List<string> GetAlignmentNames()
+    {
+        return dropdownNames;
+    }
+
     public void Clear()
     {
-        Destroy(alignment);
+        Destroy(currentAlignment);
     }
 
     public void RenderAlignment()
     {
-        Instantiate(alignment, rootPanel.transform);
-        
-        var images = alignment.GetComponentsInChildren<Image>();
+        currentAlignment = Instantiate(alignments[0], rootPanel.transform);
+
+        var images = currentAlignment.GetComponentsInChildren<Image>();
 
         foreach (var image in images)
         {
-            Instantiate(image, alignment.transform);
             var randomSprite = GetRandomSprite();
             image.sprite = randomSprite;
             var userData = image.GetComponent<UserData>();

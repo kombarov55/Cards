@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
@@ -6,10 +7,18 @@ namespace DefaultNamespace
     {
 
         public CardService cardService;
+        public Dropdown dropdown;
     
         void Start()
         {
             cardService.Refresh();
+            
+            dropdown.options.Clear();
+            
+            foreach (var name in cardService.GetAlignmentNames())
+            {
+                dropdown.options.Add(new Dropdown.OptionData(name));
+            }
         }
     }
 }
