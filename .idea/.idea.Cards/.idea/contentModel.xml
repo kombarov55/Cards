@@ -12,9 +12,11 @@
           <e p="CardSuit.cs" t="Include" />
           <e p="CardValue.cs" t="Include" />
           <e p="CardsService.cs" t="Include" />
+          <e p="CloseButtonScript.cs" t="Include" />
           <e p="FadeOut.cs" t="Include" />
           <e p="OnButtonPressed.cs" t="Include" />
           <e p="OnStartup.cs" t="Include" />
+          <e p="OpenDescriptionScript.cs" t="Include" />
           <e p="UserData.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

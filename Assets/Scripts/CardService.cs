@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using UnityEngine.XR.WSA.WebCam;
+using Image = UnityEngine.UI.Image;
 using Random = UnityEngine.Random;
 
 public class CardService : MonoBehaviour
@@ -15,6 +18,7 @@ public class CardService : MonoBehaviour
 
     public List<GameObject> alignments;
     public GameObject rootPanel;
+    public GameObject descriptionPopup;
 
     private GameObject currentAlignment;
     
@@ -26,6 +30,19 @@ public class CardService : MonoBehaviour
     public void Start()
     {
         InitializeCards();
+    }
+
+    public void OpenDescription(Card card)
+    {
+        Instantiate(descriptionPopup, rootPanel.transform);
+        var content = descriptionPopup.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0);
+        var img = content.transform.GetChild(0).gameObject.GetComponent<Image>();
+        var title = content.transform.GetChild(1).gameObject.GetComponent<Text>();
+        var description = content.transform.GetChild(2).gameObject.GetComponent<Text>();
+
+        img.sprite = card.sprite;
+        title.text = "Новыфй текст!";
+        description.text = "1231231231";
     }
 
     private void InitializeCards()
@@ -65,9 +82,11 @@ public class CardService : MonoBehaviour
             image.sprite = card.sprite;
             var userData = image.GetComponent<UserData>();
             userData.card = card;
+            var openDescriptionScript = image.GetComponent<OpenDescriptionScript>();
+            openDescriptionScript.CardService = this;
         }
     }
-    
+
     private Card GetRandomCard()
     {
         var rand = Random.Range(0, cards.Count);
