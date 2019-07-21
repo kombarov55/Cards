@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409a7be8-00f5-4f4e-a971-ab0ce30995ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayingCards.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CardLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CardLoader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cards/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bbbfef-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bbbfef-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/62a51c-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/62a51c-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/fe/fea068ead3346d9108e839c54d0d093c" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/fea068ead3346d9108e839c54d0d093c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,22 +41,90 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="46" column="73" lean-forward="true" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
+            <state relative-caret-position="84">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
               <folding>
-                <marker date="1563558305362" expanded="true" signature="6:147" ph="..." />
-                <marker date="1563558305362" expanded="true" signature="189:3462" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="756:795" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="839:1615" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="1651:1925" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="1952:2008" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="2053:2095" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="2120:2194" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="2229:2761" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="2423:2755" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="2795:2944" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="3023:3460" ph="{...}" />
-                <marker date="1563558305362" expanded="true" signature="3245:3431" ph="{...}" />
+                <marker date="1563561276323" expanded="false" signature="6:147" ph="..." />
+                <marker date="1563561276323" expanded="true" signature="189:2696" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="756:839" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="870:926" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="955:1029" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="1068:1600" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="1262:1594" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="1649:1691" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="1735:2511" ph="{...}" />
+                <marker date="1563561276323" expanded="true" signature="2545:2694" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardLoader.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+              <folding>
+                <marker date="1563719862036" expanded="false" signature="6:84" ph="..." />
+                <marker date="1563719862036" expanded="true" signature="112:3138" ph="{...}" />
+                <marker date="1563719862036" expanded="true" signature="142:3136" ph="{...}" />
+                <marker date="1563719862036" expanded="true" signature="276:479" ph="{...}" />
+                <marker date="1563719862036" expanded="true" signature="533:1591" ph="{...}" />
+                <marker date="1563719862036" expanded="true" signature="933:1550" ph="{...}" />
+                <marker date="1563719862036" expanded="true" signature="1754:3130" ph="{...}" />
+                <marker date="1563719862036" expanded="true" signature="1777:2068" ph="/* Все спрайты лежат в порядке от 6 до туза. Элементы енума CardValue расположены в таком же порядке. ... */" />
+                <marker date="1563719862036" expanded="true" signature="2109:3093" ph="{...}" />
+                <marker date="1563719862036" expanded="true" signature="2298:2939" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardSuit.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+              <folding>
+                <marker date="1563304363179" expanded="true" signature="26:87" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Resources/PlayingCards.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnStartup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <marker date="1563517110796" expanded="true" signature="6:40" ph="..." />
+                <marker date="1563517110796" expanded="true" signature="68:510" ph="{...}" />
+                <marker date="1563517110796" expanded="true" signature="113:508" ph="{...}" />
+                <marker date="1563517110796" expanded="true" signature="220:502" ph="{...}" />
+                <marker date="1563517110796" expanded="true" signature="395:492" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardValue.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+              <folding>
+                <marker date="1563304528483" expanded="true" signature="26:120" ph="{...}" />
+                <marker date="1563304528483" expanded="true" signature="54:118" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -54,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="90">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
               <folding>
                 <marker date="1563538649003" expanded="true" signature="46:213" ph="{...}" />
                 <marker date="1563538649003" expanded="true" signature="99:211" ph="{...}" />
@@ -65,26 +144,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="135">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding>
                 <marker date="1563536942106" expanded="true" signature="6:50" ph="..." />
                 <marker date="1563536942106" expanded="true" signature="78:406" ph="{...}" />
                 <marker date="1563536942106" expanded="true" signature="158:404" ph="{...}" />
                 <marker date="1563536942106" expanded="true" signature="277:398" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -97,13 +167,22 @@
       <find>refresh</find>
       <find>close</find>
       <find>descriptionPopup</find>
+      <find>prefab</find>
+      <find>button</find>
+      <find>cards</find>
+      <find>index</find>
+      <find>HEARTS</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Heart</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardSuit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnButtonPressed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UserData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,11 +193,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/1c/4f63a9b4/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnStartup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/d8/15b78f7d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardsService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/48/184241be/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Card.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/55/432ff71b/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/d8/92eaa1d1/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/3b/9dfe858c/Object.cs" root0="SKIP_HIGHLIGHTING" />
@@ -139,7 +220,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FadeOut.cs" />
         <option value="$PROJECT_DIR$/Assets/AlignmentService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnStartup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OpenDescription.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UserData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnClick.cs" />
@@ -148,7 +228,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CloseDescription.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/PlayingCardsDescription.xml" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/PlayingCards.xml" />
       </list>
     </option>
   </component>
@@ -160,10 +244,34 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -202,10 +310,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="13186">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="29732">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13186" />
+      <option name="pid" value="29732" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -235,7 +343,8 @@
       <workItem from="1563439256301" duration="917000" />
       <workItem from="1563474055968" duration="1293000" />
       <workItem from="1563516635522" duration="14369000" />
-      <workItem from="1563557606032" duration="759000" />
+      <workItem from="1563557606032" duration="2953000" />
+      <workItem from="1563718715654" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Another initial">
       <created>1563301575770</created>
@@ -307,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563539066490</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Открытие и закрытие попапа">
+      <created>1563558376060</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1563558376060</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37156000" />
+    <option name="totallyTimeSpent" value="40707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,8 +440,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="747" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978479" weight="0.2712766" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978479" visible="true" weight="0.2712766" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5021521" side_tool="true" weight="0.25377643" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3664" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3248" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978479" visible="true" weight="0.2712766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5021521" side_tool="true" weight="0.25377643" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -338,7 +481,7 @@
       <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.3248" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3248" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
@@ -349,7 +492,7 @@
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Unit Tests Coverage" order="5" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -368,7 +511,8 @@
     <MESSAGE value="Добавил дропдаун" />
     <MESSAGE value="Добавил генерацию карт" />
     <MESSAGE value="Всё круто!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Всё круто!" />
+    <MESSAGE value="Открытие и закрытие попапа" />
+    <option name="LAST_COMMIT_MESSAGE" value="Открытие и закрытие попапа" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,6 +521,32 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CardLoader.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CardLoader.cs" initialLine="37">
+            <startOffsets>
+              <option value="1315" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1390" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CardLoader.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/CardLoader.cs" initialLine="39">
+            <startOffsets>
+              <option value="1424" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1486" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -408,6 +578,42 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>Resources.Load(&quot;PlayingCards.xml&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Resources.Load(&quot;/home/dust/UnityProjects/SAMPLE_2D/cards/Cards/Assets/Resources/PlayingCards.xml&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Resources.Load(&quot;/home/dust/UnityProjects/SAMPLE_2D/cards/Cards/Assets/Resources/PlayingCards.xml.xml&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Resources.Load(&quot;./PlayingCards.xml&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Resources.Load(&quot;.PlayingCards.xml&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Resources.Load(&quot;Resources/PlayingCards.xml&quot;)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>Destroy(transform.parent.gameObject)</expression-string>
         <language-id>C#</language-id>
         <custom-info>RiderImportsList:</custom-info>
@@ -421,42 +627,6 @@
       </expression>
       <expression>
         <expression-string>descriptionPopup.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(1)</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>descriptionPopup.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0)</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>descriptionPopup.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>descriptionPopup.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>descriptionPopup.transform.GetChild(0).gameObject</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>descriptionPopup.transform.GetChild(0).game</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>descriptionPopup.transform.GetChild(0)</expression-string>
         <language-id>C#</language-id>
         <custom-info>RiderImportsList:</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -492,16 +662,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/General.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/script.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardSuit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-          <folding>
-            <marker date="1563304363179" expanded="true" signature="26:87" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/416475E6-C0B9-423B-A45F-C1C6EA4AFF1C/1c/4f63a9b4/Vector3.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4650">
@@ -517,17 +677,6 @@
             <marker date="1563304922043" expanded="true" signature="6:52" ph="..." />
             <marker date="1563304922043" expanded="true" signature="80:280" ph="{...}" />
             <marker date="1563304922043" expanded="true" signature="112:278" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardValue.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-          <folding>
-            <marker date="1563304528483" expanded="true" signature="26:120" ph="{...}" />
-            <marker date="1563304528483" expanded="true" signature="54:118" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -571,32 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="233" column="6" selection-start-line="233" selection-start-column="6" selection-end-line="233" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnStartup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <marker date="1563517110796" expanded="true" signature="6:40" ph="..." />
-            <marker date="1563517110796" expanded="true" signature="68:510" ph="{...}" />
-            <marker date="1563517110796" expanded="true" signature="113:508" ph="{...}" />
-            <marker date="1563517110796" expanded="true" signature="220:502" ph="{...}" />
-            <marker date="1563517110796" expanded="true" signature="395:492" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Card.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding>
-            <marker date="1563522741710" expanded="true" signature="46:395" ph="{...}" />
-            <marker date="1563522741710" expanded="true" signature="70:393" ph="{...}" />
-            <marker date="1563522741710" expanded="true" signature="271:387" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,13 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC90F279-9BF0-4C9C-B998-966CC227DBF4/48/184241be/Button.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -731,10 +847,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1F0C1EF1-AD52-4C38-BBC5-536809C46B48/3f/4dc99f93/NullReferenceException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99258562-0D64-4271-98DD-F3A0E1467733/d8/15b78f7d/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Card.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding>
+            <marker date="1563559864020" expanded="true" signature="46:512" ph="{...}" />
+            <marker date="1563559864020" expanded="true" signature="70:510" ph="{...}" />
+            <marker date="1563559864020" expanded="true" signature="346:504" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnStartup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <marker date="1563517110796" expanded="true" signature="6:40" ph="..." />
+            <marker date="1563517110796" expanded="true" signature="68:510" ph="{...}" />
+            <marker date="1563517110796" expanded="true" signature="113:508" ph="{...}" />
+            <marker date="1563517110796" expanded="true" signature="220:502" ph="{...}" />
+            <marker date="1563517110796" expanded="true" signature="395:492" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardValue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding>
+            <marker date="1563304528483" expanded="true" signature="26:120" ph="{...}" />
+            <marker date="1563304528483" expanded="true" signature="54:118" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseButtonScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="90">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding>
             <marker date="1563538649003" expanded="true" signature="46:213" ph="{...}" />
             <marker date="1563538649003" expanded="true" signature="99:211" ph="{...}" />
@@ -743,37 +910,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="46" column="73" lean-forward="true" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
-          <folding>
-            <marker date="1563558305362" expanded="true" signature="6:147" ph="..." />
-            <marker date="1563558305362" expanded="true" signature="189:3462" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="756:795" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="839:1615" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="1651:1925" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="1952:2008" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="2053:2095" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="2120:2194" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="2229:2761" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="2423:2755" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="2795:2944" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="3023:3460" ph="{...}" />
-            <marker date="1563558305362" expanded="true" signature="3245:3431" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/OpenDescriptionScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="135">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
             <marker date="1563536942106" expanded="true" signature="6:50" ph="..." />
             <marker date="1563536942106" expanded="true" signature="78:406" ph="{...}" />
             <marker date="1563536942106" expanded="true" signature="158:404" ph="{...}" />
             <marker date="1563536942106" expanded="true" signature="277:398" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <marker date="1563561276323" expanded="false" signature="6:147" ph="..." />
+            <marker date="1563561276323" expanded="true" signature="189:2696" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="756:839" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="870:926" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="955:1029" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="1068:1600" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="1262:1594" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="1649:1691" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="1735:2511" ph="{...}" />
+            <marker date="1563561276323" expanded="true" signature="2545:2694" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardSuit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding>
+            <marker date="1563304363179" expanded="true" signature="26:87" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/PlayingCards.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CardLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <marker date="1563719862036" expanded="false" signature="6:84" ph="..." />
+            <marker date="1563719862036" expanded="true" signature="112:3138" ph="{...}" />
+            <marker date="1563719862036" expanded="true" signature="142:3136" ph="{...}" />
+            <marker date="1563719862036" expanded="true" signature="276:479" ph="{...}" />
+            <marker date="1563719862036" expanded="true" signature="533:1591" ph="{...}" />
+            <marker date="1563719862036" expanded="true" signature="933:1550" ph="{...}" />
+            <marker date="1563719862036" expanded="true" signature="1754:3130" ph="{...}" />
+            <marker date="1563719862036" expanded="true" signature="1777:2068" ph="/* Все спрайты лежат в порядке от 6 до туза. Элементы енума CardValue расположены в таком же порядке. ... */" />
+            <marker date="1563719862036" expanded="true" signature="2109:3093" ph="{...}" />
+            <marker date="1563719862036" expanded="true" signature="2298:2939" ph="{...}" />
           </folding>
         </state>
       </provider>

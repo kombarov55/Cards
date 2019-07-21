@@ -28,7 +28,41 @@ public class CardService : MonoBehaviour
 
     public void Start()
     {
-        InitializeCards();
+        cards = CardLoader.LoadCards(hearts, clubs, spades, diamonds);
+    }
+    
+    public void Refresh()
+    {
+        Clear();
+        RenderAlignment();
+    }
+    
+    public void Clear()
+    {
+        Destroy(currentAlignment);
+        usedCards.Clear();
+    }
+    
+    public void RenderAlignment()
+    {
+        currentAlignment = Instantiate(alignments[0], rootPanel.transform);
+
+        var images = currentAlignment.GetComponentsInChildren<Image>();
+
+        foreach (var image in images)
+        {
+            var card = GetRandomCard();
+            image.sprite = card.sprite;
+            var userData = image.GetComponent<UserData>();
+            userData.card = card;
+            var openDescriptionScript = image.GetComponent<OpenDescriptionScript>();
+            openDescriptionScript.CardService = this;
+        }
+    }
+    
+    public List<string> GetAlignmentNames()
+    {
+        return dropdownNames;
     }
 
     public void OpenDescription(Card card)
@@ -47,71 +81,11 @@ public class CardService : MonoBehaviour
         closeButton.onClick.AddListener(() => Destroy(descriptionPopup));
     }
 
-    private void InitializeCards()
-    {
-        cards.AddRange(GenerateCards(hearts, CardSuit.HEART));
-        cards.AddRange(GenerateCards(clubs, CardSuit.CLUB));
-        cards.AddRange(GenerateCards(spades, CardSuit.SPADE));
-        cards.AddRange(GenerateCards(diamonds, CardSuit.DIAMOND));        
-    }
-
-    public void Refresh()
-    {
-        Clear();
-        RenderAlignment();
-    }
-
-    public List<string> GetAlignmentNames()
-    {
-        return dropdownNames;
-    }
-
-    public void Clear()
-    {
-        Destroy(currentAlignment);
-        usedCards.Clear();
-    }
-
-    public void RenderAlignment()
-    {
-        currentAlignment = Instantiate(alignments[0], rootPanel.transform);
-
-        var images = currentAlignment.GetComponentsInChildren<Image>();
-
-        foreach (var image in images)
-        {
-            var card = GetRandomCard();
-            image.sprite = card.sprite;
-            var userData = image.GetComponent<UserData>();
-            userData.card = card;
-            var openDescriptionScript = image.GetComponent<OpenDescriptionScript>();
-            openDescriptionScript.CardService = this;
-        }
-    }
-
     private Card GetRandomCard()
     {
         var rand = Random.Range(0, cards.Count);
         var result = cards[rand];
         usedCards.Add(result);
         return result;
-    }
-    
-    private List<Card> GenerateCards(List<Sprite> sprites, CardSuit suit)
-    {
-        var cards = new List<Card>();
-        
-        var values = Enum.GetValues(typeof(CardValue)) as CardValue[];
-        var valuesEnum = values.GetEnumerator();
-        
-        foreach (var sprite in sprites)
-        {
-            valuesEnum.MoveNext();
-            var cardValue = (CardValue) valuesEnum.Current;
-            
-            cards.Add(new Card(suit, cardValue, sprite));
-        }
-
-        return cards;
     }
 }
