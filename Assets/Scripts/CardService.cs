@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 public class CardService : MonoBehaviour
 {
@@ -20,21 +18,23 @@ public class CardService : MonoBehaviour
     private GameObject currentAlignment;
     private GameObject descriptionPopup;
     
-    
     private List<Card> cards = new List<Card>();
-    private List<Card> usedCards = new List<Card>(); 
-
-    private readonly List<string> dropdownNames = new List<string> {"Общий", "На событие"};
+    private List<Card> usedCards = new List<Card>();
 
     public void Start()
     {
-        cards = CardLoader.LoadCards(hearts, clubs, spades, diamonds);
+        currentAlignment = Instantiate(alignments[0]);
+    }
+
+    public void LoadCards()
+    {
+        cards = CardLoader.LoadCards(hearts, clubs, spades, diamonds);        
     }
     
     public void Refresh()
     {
-        Clear();
-        RenderAlignment();
+        var currentAlignmentName = currentAlignment.name;
+        RenderAlignment(currentAlignmentName);
     }
     
     public void Clear()
@@ -42,10 +42,25 @@ public class CardService : MonoBehaviour
         Destroy(currentAlignment);
         usedCards.Clear();
     }
-    
-    public void RenderAlignment()
+
+    public void RenderAlignment(string alignmentName)
     {
-        currentAlignment = Instantiate(alignments[0], rootPanel.transform);
+        foreach (var alignment in alignments)
+        {
+            if (alignment.name == alignmentName)
+            {
+                RenderAlignment(alignment);
+                return;
+            }
+        }
+        
+        Debug.LogWarning("Alignment " + alignmentName + " not found!");
+    }
+
+    public void RenderAlignment(GameObject alignment)
+    {
+        Clear();
+        currentAlignment = Instantiate(alignment, rootPanel.transform);
 
         var images = currentAlignment.GetComponentsInChildren<Image>();
 
@@ -59,9 +74,16 @@ public class CardService : MonoBehaviour
             openDescriptionScript.CardService = this;
         }
     }
-    
+
     public List<string> GetAlignmentNames()
     {
+        List<string> dropdownNames = new List<string>();
+        
+        foreach (var alignment in alignments)
+        {
+            dropdownNames.Add(alignment.name);
+        }
+
         return dropdownNames;
     }
 
