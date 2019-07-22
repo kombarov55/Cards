@@ -60,7 +60,9 @@ public class CardService : MonoBehaviour
     public void RenderAlignment(GameObject alignment)
     {
         Clear();
+        var alignmentName = alignment.name;
         currentAlignment = Instantiate(alignment, rootPanel.transform);
+        currentAlignment.name = alignmentName;
 
         var images = currentAlignment.GetComponentsInChildren<Image>();
 
@@ -109,6 +111,12 @@ public class CardService : MonoBehaviour
     {
         var rand = Random.Range(0, cards.Count);
         var result = cards[rand];
+
+        if (usedCards.Contains(result))
+        {
+            return GetRandomCard();
+        }
+
         usedCards.Add(result);
         return result;
     }

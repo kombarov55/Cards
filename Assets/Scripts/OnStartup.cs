@@ -27,7 +27,7 @@ namespace DefaultNamespace
                 cardService.RenderAlignment(name);
             });
 
-                cardService.RenderAlignment(alignmentNames[0]);
+            cardService.RenderAlignment(alignmentNames[0]);
         }
     }
 }
