@@ -72,13 +72,15 @@ public class CardService : MonoBehaviour
         var img = content.transform.GetChild(0).gameObject.GetComponent<Image>();
         var title = content.transform.GetChild(1).gameObject.GetComponent<Text>();
         var description = content.transform.GetChild(2).gameObject.GetComponent<Text>();
-        var closeButton = descriptionPopup.transform.GetChild(1).gameObject.GetComponent<Button>();
+        var closeButton = descriptionPopup.transform.GetChild(1).gameObject.GetComponent<Image>();
 
         img.sprite = card.sprite;
-        title.text = "Новыфй текст!";
-        description.text = "1231231231";
+        title.text = card.title;
+        description.text = card.description;
         
-        closeButton.onClick.AddListener(() => Destroy(descriptionPopup));
+        closeButton.gameObject.AddComponent<ActionBehaviour>();
+        closeButton.gameObject.GetComponent<ActionBehaviour>().action = () => Destroy(descriptionPopup);
+
     }
 
     private Card GetRandomCard()
