@@ -13,6 +13,7 @@ namespace DefaultNamespace
         public void Start()
         {
             _flippingScript = GetComponent<FlippingScript>();
+            _userData = GetComponent<UserData>();
         }
 
         public void OnPointerClick(PointerEventData eventData)

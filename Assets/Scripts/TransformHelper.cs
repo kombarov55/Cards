@@ -8,16 +8,18 @@ namespace DefaultNamespace
     {
         public void MoveAllToDeck(List<GameObject> cardObjects, Vector3 deck)
         {
-            Vector3 lastCardInDeckPosition = deck;
-            
             foreach (var cardObject in cardObjects)
             {
-                cardObject.transform.position = lastCardInDeckPosition + new Vector3(-5f, 5f);
-                lastCardInDeckPosition = cardObject.transform.position;
+                cardObject.transform.position = deck;
             }
         }
 
         public void MoveAllToDestPositions(List<GameObject> cardObjects)
+        {
+            StartCoroutine(MoveAllToDestPositionsCoroutine(cardObjects));
+        }
+
+        private IEnumerator MoveAllToDestPositionsCoroutine(List<GameObject> cardObjects)
         {
             foreach (var cardObject in cardObjects)
             {
@@ -27,7 +29,8 @@ namespace DefaultNamespace
                 float time = 0.3f;
                 
                 StartCoroutine(MoveOverSeconds(cardObject, descPosition, time));
-                StartCoroutine(RotateNTimes(cardObject, 2, time,  cardObject.transform.eulerAngles.z));
+                StartCoroutine(RotateNTimes(cardObject, 1, time,  cardObject.transform.eulerAngles.z));
+                yield return new WaitForSeconds(0.1f);
             }
         }
         

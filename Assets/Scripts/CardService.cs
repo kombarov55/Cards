@@ -18,7 +18,7 @@ public class CardService : MonoBehaviour
     public GameObject rootPanel;
     public GameObject descriptionPopupPrefab;
 
-    private GameObject currentAlignment;
+    public GameObject currentAlignment;
     private GameObject descriptionPopup;
     
     private List<Card> cards = new List<Card>();
@@ -30,7 +30,6 @@ public class CardService : MonoBehaviour
 
     public void Start()
     {
-        currentAlignment = Instantiate(alignments[0]);
         _transformHelper = GetComponent<TransformHelper>();
     }
 
@@ -47,7 +46,11 @@ public class CardService : MonoBehaviour
     
     public void Clear()
     {
-        Destroy(currentAlignment);
+        if (currentAlignment != null)
+        {
+            Destroy(currentAlignment);
+        }
+
         usedCards.Clear();
     }
 
@@ -97,6 +100,7 @@ public class CardService : MonoBehaviour
         }
         
         _transformHelper.MoveAllToDeck(currentCardGameObjects, deck.transform.position);
+        _transformHelper.MoveAllToDestPositions(currentCardGameObjects);
     }
 
     public List<string> GetAlignmentNames()
