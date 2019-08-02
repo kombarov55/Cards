@@ -87,6 +87,7 @@ public class CardService : MonoBehaviour
             userData.card = card;
             userData.cardService = this;
             userData.destPosition = image.transform.position;
+            userData.destDegree = image.transform.eulerAngles.z;
         }
 
         

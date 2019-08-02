@@ -7,5 +7,6 @@ namespace DefaultNamespace
         public Card card;
         public CardService cardService;
         public Vector3 destPosition;
+        public float destDegree;
     }
 }
