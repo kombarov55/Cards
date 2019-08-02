@@ -14,7 +14,7 @@ public class CardService : MonoBehaviour
     
     public GameObject deck;
 
-    public List<GameObject> alignments;
+    public List<GameObject> alignmentPrefabs;
     public GameObject rootPanel;
     public GameObject descriptionPopupPrefab;
 
@@ -39,13 +39,7 @@ public class CardService : MonoBehaviour
     {
         cards = CardLoader.LoadCards(hearts, clubs, spades, diamonds);        
     }
-    
-    public void Refresh()
-    {
-        var currentAlignmentName = currentAlignment.name;
-        RenderAlignment(currentAlignmentName);
-    }
-    
+
     public void Clear()
     {
         if (currentAlignment != null)
@@ -54,6 +48,7 @@ public class CardService : MonoBehaviour
         }
 
         usedCards.Clear();
+        currentCardGameObjects.Clear();
     }
 
     public void MoveAllToDestPositions()
@@ -63,7 +58,7 @@ public class CardService : MonoBehaviour
 
     public void RenderAlignment(string alignmentName)
     {
-        foreach (var alignment in alignments)
+        foreach (var alignment in alignmentPrefabs)
         {
             if (alignment.name == alignmentName)
             {
@@ -109,7 +104,7 @@ public class CardService : MonoBehaviour
     {
         List<string> dropdownNames = new List<string>();
         
-        foreach (var alignment in alignments)
+        foreach (var alignment in alignmentPrefabs)
         {
             dropdownNames.Add(alignment.name);
         }

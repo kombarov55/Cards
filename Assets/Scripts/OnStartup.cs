@@ -24,7 +24,8 @@ namespace DefaultNamespace
             dropdown.onValueChanged.AddListener((index) =>
             {
                 var name = dropdown.options[index].text;
-                cardService.RenderAlignment(name);
+                cardService.currentAlignmentName = name;
+                cardService.Clear();
             });
 
             cardService.currentAlignmentName = alignmentNames[0];
