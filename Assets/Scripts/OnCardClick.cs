@@ -18,6 +18,8 @@ namespace DefaultNamespace
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            if (_flippingScript.isFlipping) return;
+            
             if (!_flippingScript.flipped)
             {
                 StartCoroutine(_flippingScript.Flip());

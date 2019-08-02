@@ -722,7 +722,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "7\u044B"
+  m_Text: 7
 --- !u!1 &6495073561571191691
 GameObject:
   m_ObjectHideFlags: 0
