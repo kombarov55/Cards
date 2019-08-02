@@ -9,7 +9,8 @@ public class CardService : MonoBehaviour
     public List<Sprite> hearts;
     public List<Sprite> clubs;
     public List<Sprite> spades;
-    public List<Sprite> diamonds; 
+    public List<Sprite> diamonds;
+    public Sprite shirt;
 
     public List<GameObject> alignments;
     public GameObject rootPanel;
@@ -72,8 +73,8 @@ public class CardService : MonoBehaviour
             image.sprite = card.sprite;
             var userData = image.GetComponent<UserData>();
             userData.card = card;
-            var openDescriptionScript = image.GetComponent<OpenDescriptionScript>();
-            openDescriptionScript.CardService = this;
+            userData.cardService = this;
+            userData.shirt = shirt;
         }
     }
 

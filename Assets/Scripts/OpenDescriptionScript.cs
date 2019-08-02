@@ -1,18 +1,22 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace DefaultNamespace
 {
 
-    public class OpenDescriptionScript : MonoBehaviour, IPointerClickHandler
+    public class OpenDescriptionScript : MonoBehaviour
     {
-        
-        public CardService CardService;
 
-        public void OnPointerClick(PointerEventData eventData)
+        private UserData _userData;
+
+        public void Start()
+        {
+            _userData = GetComponent<UserData>();
+        }
+
+        public void OpenDescription()
         {
             var card = GetComponent<UserData>().card;
-            CardService.OpenDescription(card);
+            _userData.cardService.OpenDescription(card);
         }
     }
 }

@@ -1,45 +1,41 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
-    public class FlippingScript : MonoBehaviour, IPointerClickHandler
+    public class FlippingScript : MonoBehaviour
     {
 
-        public float rotationSpeed;
+        public bool flipped = false;
+        
+        private float _rotationSpeed = 3f;
 
-        public Sprite otherSprite;
-
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            StartCoroutine(Flip());
-        }
-
-        /*
-         * Перевернуть на 90 градусов за 0.5 сек
-         * Есть скорость поворота - параметр
-         * Делаю поворот по скорости и жду сл кадра, пока не повернётся на 90 градусов 
-         */
         public IEnumerator Flip()
         {
             Debug.Log("Flip clicked");
 
             while (transform.rotation.eulerAngles.y < 90f)
             {
-               transform.Rotate(new Vector3(0f, transform.rotation.y + rotationSpeed));
+               transform.Rotate(new Vector3(0f, transform.rotation.y + _rotationSpeed));
+               Debug.Log("1: " + transform.rotation.eulerAngles.y);
                yield return new WaitForEndOfFrame();
             }
 
-            GetComponent<Image>().sprite = otherSprite;
+            GetComponent<Image>().sprite = GetComponent<UserData>().card.sprite;
+            transform.Rotate(0f, 180f, 0f);
+            Debug.Log("transform.Rotate(0f, 180f, 0f)=" + transform.rotation.eulerAngles.y);
             
-            while (transform.rotation.eulerAngles.y < 180f)
+            while (transform.rotation.eulerAngles.y < 350f)
             {
-                transform.Rotate(new Vector3(0f, transform.rotation.y + rotationSpeed));
+                transform.Rotate(new Vector3(0f, transform.rotation.y + _rotationSpeed));
+                Debug.Log("2: " + transform.rotation.eulerAngles.y);
                 yield return new WaitForEndOfFrame();
             }
-
+            
+            transform.rotation.eulerAngles.Set(0f, 0f, 0f);
+            Debug.Log("flipped=true");
+            flipped = true;
         }
     }
 }

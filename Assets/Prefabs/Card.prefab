@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7950620346849681939}
   - component: {fileID: 2834108521960069762}
   - component: {fileID: 3788717770545735250}
+  - component: {fileID: 734613532422346489}
+  - component: {fileID: 7279066790147060506}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -88,6 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218b2e3878ce4f88a449a1b647b109e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardService: {fileID: 0}
+  shirt: {fileID: 0}
 --- !u!114 &3788717770545735250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,4 +104,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca3d30eb8f44b19a964135b4f5824b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CardService: {fileID: 0}
+--- !u!114 &734613532422346489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950620346849681941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed5429ba7f843cb8a50210bcfb3d7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  otherSprite: {fileID: 0}
+--- !u!114 &7279066790147060506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950620346849681941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a47aa1cd0c24e9a8549435da574480f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
