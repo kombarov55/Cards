@@ -7,12 +7,11 @@ namespace DefaultNamespace
     public class OnCardClick : MonoBehaviour, IPointerClickHandler
     {
         
-        private OpenDescriptionScript _openDescriptionScript;
         private FlippingScript _flippingScript;
+        private UserData _userData;
 
         public void Start()
         {
-            _openDescriptionScript = GetComponent<OpenDescriptionScript>();
             _flippingScript = GetComponent<FlippingScript>();
         }
 
@@ -26,7 +25,7 @@ namespace DefaultNamespace
             }
             else
             {
-                _openDescriptionScript.OpenDescription();
+                _userData.cardService.OpenDescription(_userData.card);
             }
         }
     }

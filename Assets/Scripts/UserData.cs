@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
@@ -7,11 +6,6 @@ namespace DefaultNamespace
     {
         public Card card;
         public CardService cardService;
-        public Sprite shirt;
-        
-        public void Start()
-        {
-            GetComponent<Image>().sprite = shirt;
-        }
+        public Vector3 destPosition;
     }
 }

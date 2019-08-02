@@ -11,6 +11,8 @@ public class CardService : MonoBehaviour
     public List<Sprite> spades;
     public List<Sprite> diamonds;
     public Sprite shirt;
+    
+    public GameObject deck;
 
     public List<GameObject> alignments;
     public GameObject rootPanel;
@@ -21,10 +23,15 @@ public class CardService : MonoBehaviour
     
     private List<Card> cards = new List<Card>();
     private List<Card> usedCards = new List<Card>();
+    
+    List<GameObject> currentCardGameObjects = new List<GameObject>();
+
+    private TransformHelper _transformHelper;
 
     public void Start()
     {
         currentAlignment = Instantiate(alignments[0]);
+        _transformHelper = GetComponent<TransformHelper>();
     }
 
     public void LoadCards()
@@ -42,6 +49,11 @@ public class CardService : MonoBehaviour
     {
         Destroy(currentAlignment);
         usedCards.Clear();
+    }
+
+    public void MoveAllToDestPositions()
+    {
+        _transformHelper.MoveAllToDestPositions(currentCardGameObjects);
     }
 
     public void RenderAlignment(string alignmentName)
@@ -70,12 +82,20 @@ public class CardService : MonoBehaviour
         foreach (var image in images)
         {
             var card = GetRandomCard();
-            image.sprite = card.sprite;
+            image.sprite = shirt;
             var userData = image.GetComponent<UserData>();
             userData.card = card;
             userData.cardService = this;
-            userData.shirt = shirt;
+            userData.destPosition = image.transform.position;
         }
+
+        
+        foreach (var image in images)
+        {
+            currentCardGameObjects.Add(image.gameObject);
+        }
+        
+        _transformHelper.MoveAllToDeck(currentCardGameObjects, deck.transform.position);
     }
 
     public List<string> GetAlignmentNames()
