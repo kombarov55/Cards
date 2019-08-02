@@ -268,80 +268,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150657096}
   m_CullTransparentMesh: 0
---- !u!1 &159117530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 159117531}
-  - component: {fileID: 159117533}
-  - component: {fileID: 159117532}
-  m_Layer: 5
-  m_Name: "\u0420\u0443\u043D\u0430"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &159117531
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159117530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
-  m_Children: []
-  m_Father: {fileID: 247492302}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: 312}
-  m_SizeDelta: {x: 600, y: 480}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &159117532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159117530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 02e2e299ce6f59ec387c677e2875038c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &159117533
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159117530}
-  m_CullTransparentMesh: 0
 --- !u!1 &165089965
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,46 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea068ead3346d9108e839c54d0d093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 21300000, guid: 1c4b079dae372a911af34c22b25f3794, type: 3}
-  - {fileID: 21300000, guid: 87699f51e0a8ecf11a586fc1931fafac, type: 3}
-  - {fileID: 21300000, guid: 844f96311d29c987eafcbe0d37f958dc, type: 3}
-  - {fileID: 21300000, guid: f39f21196dbf48d07b5da9380bcb5026, type: 3}
-  - {fileID: 21300000, guid: 14160c1fbc694a4edaa7c885082184b2, type: 3}
-  - {fileID: 21300000, guid: a656c43fcfa575efda5b1f4ba24763fc, type: 3}
-  - {fileID: 21300000, guid: ad8a2e80d8bb5ab32abc28d0cab45da1, type: 3}
-  - {fileID: 21300000, guid: 39f31cf5d2e050b1dbe82622f39398e5, type: 3}
-  - {fileID: 21300000, guid: eca68d468c778ae47842acb123bf5645, type: 3}
-  clubs:
-  - {fileID: 21300000, guid: 0d03eb396a2e4e2beaac761308280691, type: 3}
-  - {fileID: 21300000, guid: cc90a3b7fd52e5ee086b561eeec5c0cf, type: 3}
-  - {fileID: 21300000, guid: ace53d75239fcb8439593a4850246da1, type: 3}
-  - {fileID: 21300000, guid: b9a6e37d72c64e875a76570e407db184, type: 3}
-  - {fileID: 21300000, guid: 5b21160aabb66221aae657823a972eb3, type: 3}
-  - {fileID: 21300000, guid: 1698b1e2713bf274380634d43771dfb7, type: 3}
-  - {fileID: 21300000, guid: 9592771001163a125a765feeb42f1ec1, type: 3}
-  - {fileID: 21300000, guid: ce9cf598bd462d3ba9b45c5eede90167, type: 3}
-  - {fileID: 21300000, guid: e26055c67dadb873c8dde8c7e668bbae, type: 3}
-  spades:
-  - {fileID: 21300000, guid: e157059d5dc9ca1d49e5d92f63ce7f4a, type: 3}
-  - {fileID: 21300000, guid: 335855ef814eaab478879d35658b4584, type: 3}
-  - {fileID: 21300000, guid: 270da7a110d7ce60b962f6e984ba4137, type: 3}
-  - {fileID: 21300000, guid: 81c112fb88a704ad5a6cefd39f4666be, type: 3}
-  - {fileID: 21300000, guid: 4549c6707ee33011eba35ca01289dfab, type: 3}
-  - {fileID: 21300000, guid: a3edb2947b846122a8b5e439617fcb53, type: 3}
-  - {fileID: 21300000, guid: 81683ea2ab7436c0aaaa3974ce0dc9c6, type: 3}
-  - {fileID: 21300000, guid: 59521722c9282b2bb8f03c3522645118, type: 3}
-  - {fileID: 21300000, guid: 154601c5161cd558186ff5e4f5216c69, type: 3}
-  diamonds:
-  - {fileID: 21300000, guid: 112669d4255eec87eb8539445e42fad6, type: 3}
-  - {fileID: 21300000, guid: ba547d396f6cc3c97af20b24853ac265, type: 3}
-  - {fileID: 21300000, guid: b2e4fff745c3e850594e286cef9a785f, type: 3}
-  - {fileID: 21300000, guid: 37f2c807aa1d49401af37e5da74b7ed1, type: 3}
-  - {fileID: 21300000, guid: f6d2464a21375fe96a3ec7bd8212c18c, type: 3}
-  - {fileID: 21300000, guid: fda2491626fc62c1e971dfc0ebb710d1, type: 3}
-  - {fileID: 21300000, guid: 6ddac93ca28c0339694d43a18649417d, type: 3}
-  - {fileID: 21300000, guid: 318630dde01f477f99b43d3169e19150, type: 3}
-  - {fileID: 21300000, guid: 207f10c09ae6abea8a05a424f787e226, type: 3}
+  sprites: []
   shirt: {fileID: 21300000, guid: 258a24f88590110fcb93e41d9e5be6c0, type: 3}
   deck: {fileID: 217426954}
   alignmentPrefabs:
@@ -676,7 +563,6 @@ RectTransform:
   - {fileID: 150657097}
   - {fileID: 217426955}
   - {fileID: 760273958}
-  - {fileID: 159117531}
   m_Father: {fileID: 2080259746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

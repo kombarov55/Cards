@@ -6,10 +6,7 @@ using UnityEngine.UI;
 public class CardService : MonoBehaviour
 {
 
-    public List<Sprite> hearts;
-    public List<Sprite> clubs;
-    public List<Sprite> spades;
-    public List<Sprite> diamonds;
+    public List<Sprite> sprites;
     public Sprite shirt;
     
     public GameObject deck;
@@ -37,7 +34,7 @@ public class CardService : MonoBehaviour
 
     public void LoadCards()
     {
-        cards = CardLoader.LoadCards(hearts, clubs, spades, diamonds);        
+        cards = CardLoader.LoadCards(sprites);        
     }
 
     public void Clear()

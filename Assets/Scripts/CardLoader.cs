@@ -7,10 +7,10 @@ namespace DefaultNamespace
 {
     public class CardLoader
     {
-        public static List<Card> LoadCards(List<Sprite> hearts, List<Sprite> clubs, List<Sprite> spades, List<Sprite> diamonds)
+        public static List<Card> LoadCards(List<Sprite> sprites)
         {
             var cards = LoadCardsFromXml();
-            var cardsWithSprites = BindSpritesToCardObjects(cards, hearts, clubs, spades, diamonds);
+            var cardsWithSprites = BindSpritesToCardObjects(cards, sprites);
 
             return cardsWithSprites;
         }
@@ -29,15 +29,11 @@ namespace DefaultNamespace
             
             foreach (XmlNode xmlNode in xmlNodes)
             {
-                var suit = xmlNode.Attributes["Suit"].Value;
-                var value = xmlNode.Attributes["Value"].Value;
                 var title = xmlNode.Attributes["Title"].Value;
                 var description = xmlNode.Attributes["Description"].Value;
 
-                var enumSuit = (CardSuit) Enum.Parse(typeof(CardSuit), suit.ToUpper());
-                var enumValue = (CardValue) Enum.Parse(typeof(CardValue), value.ToUpper());
                 
-                Card card = new Card(enumSuit, enumValue, title, description);
+                Card card = new Card(title, description);
                 
                 cards.Add(card);
             }
@@ -46,45 +42,26 @@ namespace DefaultNamespace
    
         }
 
-        private static List<Card> BindSpritesToCardObjects(List<Card> cards, List<Sprite> hearts, List<Sprite> clubs, List<Sprite> spades, List<Sprite> diamonds)
+        private static List<Card> BindSpritesToCardObjects(List<Card> cards, List<Sprite> sprites)
         {
-            /*
-             * Все спрайты лежат в порядке от 6 до туза. Элементы енума CardValue расположены в таком же порядке.   
-             * Для того чтобы получить нужный спрайт, нужно взять ordinal enum-а и использовать значение как
-             * индекс в массиве нужной масти. 
-             */
-
             foreach (var card in cards)
             {
-                var suit = card.suit;
-                var value = card.value;
-                
-                List<Sprite> currentSpriteList;
+                card.sprite = FindSpriteByName(sprites, card.title);
+            }
+            return cards;
+        }
 
-                switch (suit) 
+        private static Sprite FindSpriteByName(List<Sprite> sprites, string name)
+        {
+            foreach (var sprite in sprites)
+            {
+                if (sprite.name == name)
                 {
-                    case CardSuit.HEART:
-                        currentSpriteList = hearts;
-                        break;
-                    case CardSuit.CLUB:
-                        currentSpriteList = clubs;
-                        break;
-                    case CardSuit.SPADE:
-                        currentSpriteList = spades;
-                        break;
-                    case CardSuit.DIAMOND:
-                        currentSpriteList = diamonds;
-                        break;
-                    default: throw new Exception("ИДИ ВПИЗДУ ЕБУЧИЙ СИШАРП БЛЯТЬ. ЕНУМОВ ЕМУ НЕ ХВАТАЕТ");
+                    return sprite;
                 }
-
-                int ordinal = (int) value;
-                var sprite = currentSpriteList[ordinal];
-
-                card.sprite = sprite;
             }
 
-            return cards;
+            throw new Exception("Не найден спрайт с именем " + name);
         }
     }
 }
