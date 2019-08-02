@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class CardService : MonoBehaviour
 {
 
+    public string pathToXml;
+    
     public List<Sprite> sprites;
     public Sprite shirt;
     
@@ -34,7 +36,7 @@ public class CardService : MonoBehaviour
 
     public void LoadCards()
     {
-        cards = CardLoader.LoadCards(sprites);        
+        cards = CardLoader.LoadCards(pathToXml, sprites);        
     }
 
     public void Clear()

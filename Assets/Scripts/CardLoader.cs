@@ -7,19 +7,19 @@ namespace DefaultNamespace
 {
     public class CardLoader
     {
-        public static List<Card> LoadCards(List<Sprite> sprites)
+        public static List<Card> LoadCards(string path, List<Sprite> sprites)
         {
-            var cards = LoadCardsFromXml();
+            var cards = LoadCardsFromXml(path);
             var cardsWithSprites = BindSpritesToCardObjects(cards, sprites);
 
             return cardsWithSprites;
         }
 
-        private static List<Card> LoadCardsFromXml()
+        private static List<Card> LoadCardsFromXml(string path)
         {
             List<Card> cards = new List<Card>();
             
-            var textAsset = Resources.Load<TextAsset>("PlayingCards");
+            var textAsset = Resources.Load<TextAsset>(path);
             var xml = textAsset.text;
 
             var xmlDocument = new XmlDocument();
