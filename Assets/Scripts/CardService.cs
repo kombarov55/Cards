@@ -18,7 +18,9 @@ public class CardService : MonoBehaviour
     public GameObject rootPanel;
     public GameObject descriptionPopupPrefab;
 
-    public GameObject currentAlignment;
+    public string currentAlignmentName;
+    
+    private GameObject currentAlignment;
     private GameObject descriptionPopup;
     
     private List<Card> cards = new List<Card>();

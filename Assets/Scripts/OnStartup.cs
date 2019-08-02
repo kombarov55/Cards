@@ -26,6 +26,8 @@ namespace DefaultNamespace
                 var name = dropdown.options[index].text;
                 cardService.RenderAlignment(name);
             });
+
+            cardService.currentAlignmentName = alignmentNames[0];
         }
     }
 }

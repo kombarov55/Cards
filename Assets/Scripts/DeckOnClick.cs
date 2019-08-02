@@ -12,7 +12,7 @@ namespace DefaultNamespace
         {
             var cardService = scripts.GetComponent<CardService>();
             
-            cardService.RenderAlignment(cardService.alignments[0].name);
+            cardService.RenderAlignment(cardService.currentAlignmentName);
         }
     }
 }
