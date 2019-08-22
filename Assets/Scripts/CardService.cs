@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CardService : MonoBehaviour
@@ -99,18 +100,6 @@ public class CardService : MonoBehaviour
         _transformHelper.MoveAllToDestPositions(currentCardGameObjects);
     }
 
-    public List<string> GetAlignmentNames()
-    {
-        List<string> dropdownNames = new List<string>();
-        
-        foreach (var alignment in alignmentPrefabs)
-        {
-            dropdownNames.Add(alignment.name);
-        }
-
-        return dropdownNames;
-    }
-
     public void OpenDescription(Card card)
     {
         descriptionPopup = Instantiate(descriptionPopupPrefab, rootPanel.transform);
@@ -127,6 +116,11 @@ public class CardService : MonoBehaviour
         closeButton.gameObject.AddComponent<ActionBehaviour>();
         closeButton.gameObject.GetComponent<ActionBehaviour>().action = () => Destroy(descriptionPopup);
 
+    }
+
+    public void OnBackClicked()
+    {
+        SceneManager.LoadScene("AlignmentSelection");
     }
 
     private Card GetRandomCard()

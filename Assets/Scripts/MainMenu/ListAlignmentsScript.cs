@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace DefaultNamespace
@@ -38,6 +38,17 @@ namespace DefaultNamespace
         public void ListPlayingCards()
         {
             ListAlignmentNames(AlignmentType.PlayingCards);
+        }
+
+        public void ToCardAlignment(string alignmentName)
+        {
+            StaticContext.alignmentName = alignmentName;
+            SceneManager.LoadScene("PlayingCards");
+        }
+
+        public void ToRuneAlignment(string alignmentName)
+        {
+            
         }
 
         private void ListAlignmentNames(AlignmentType alignmentType)
@@ -84,6 +95,8 @@ namespace DefaultNamespace
                 var prefabName = prefab.name;
                 var item = Instantiate(buttonPrefab, contentRect);
                 item.transform.GetChild(0).gameObject.GetComponent<Text>().text = prefabName;
+                item.gameObject.AddComponent<ActionBehaviour>();
+                item.gameObject.GetComponent<ActionBehaviour>().action = () => ToCardAlignment(prefabName);
             }
         }
 
