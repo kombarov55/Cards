@@ -1784,6 +1784,8 @@ MonoBehaviour:
   alignmentPrefabs:
   - {fileID: 4368066791957960072, guid: 7e896b06fb571481e820a01d934fa8c5, type: 3}
   - {fileID: 8324412862868898354, guid: 6c972957215bb3b2d9a1ad94759dd677, type: 3}
+  - {fileID: 5318994551903795131, guid: 24ebc09c3bf888809925b7ed0addf4f4, type: 3}
+  - {fileID: 92079587346511154, guid: dc322e96e432a27da8e331c0eb03d9d2, type: 3}
   rootPanel: {fileID: 816711389}
   descriptionPopupPrefab: {fileID: 1487274757504704785, guid: dc31fcac071da572394e4697e559da12,
     type: 3}
