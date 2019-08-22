@@ -1779,10 +1779,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8651e31f37bf77a3bb4b7c4dd720c8b4, type: 3}
   - {fileID: 21300000, guid: 13bc81a426d013fc39e1eb6239f6a0d0, type: 3}
   - {fileID: 21300000, guid: 04c67c1870b3ad6c98de44015ee6c6e4, type: 3}
-  shirt: {fileID: 21300000, guid: 258a24f88590110fcb93e41d9e5be6c0, type: 3}
+  shirt: {fileID: 21300000, guid: 02e2e299ce6f59ec387c677e2875038c, type: 3}
   deck: {fileID: 1772479273}
   alignmentPrefabs:
   - {fileID: 4368066791957960072, guid: 7e896b06fb571481e820a01d934fa8c5, type: 3}
+  - {fileID: 8324412862868898354, guid: 6c972957215bb3b2d9a1ad94759dd677, type: 3}
   rootPanel: {fileID: 816711389}
   descriptionPopupPrefab: {fileID: 1487274757504704785, guid: dc31fcac071da572394e4697e559da12,
     type: 3}
