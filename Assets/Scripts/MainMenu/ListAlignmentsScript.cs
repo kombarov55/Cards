@@ -48,7 +48,8 @@ namespace DefaultNamespace
 
         public void ToRuneAlignment(string alignmentName)
         {
-            
+            StaticContext.alignmentName = alignmentName;
+            SceneManager.LoadScene("Runes");
         }
 
         private void ListAlignmentNames(AlignmentType alignmentType)
@@ -96,7 +97,17 @@ namespace DefaultNamespace
                 var item = Instantiate(buttonPrefab, contentRect);
                 item.transform.GetChild(0).gameObject.GetComponent<Text>().text = prefabName;
                 item.gameObject.AddComponent<ActionBehaviour>();
-                item.gameObject.GetComponent<ActionBehaviour>().action = () => ToCardAlignment(prefabName);
+                item.gameObject.GetComponent<ActionBehaviour>().action = () =>
+                {
+                    if (alignmentType == AlignmentType.PlayingCards)
+                    {
+                        ToCardAlignment(prefabName);
+                    }
+                    else
+                    {
+                        ToRuneAlignment(prefabName);
+                    }
+                };
             }
         }
 

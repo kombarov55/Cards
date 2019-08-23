@@ -104,9 +104,19 @@ public class CardService : MonoBehaviour
     {
         descriptionPopup = Instantiate(descriptionPopupPrefab, rootPanel.transform);
         var content = descriptionPopup.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0);
-        var img = content.transform.GetChild(0).gameObject.GetComponent<Image>();
-        var title = content.transform.GetChild(1).gameObject.GetComponent<Text>();
-        var description = content.transform.GetChild(2).gameObject.GetComponent<Text>();
+
+        Image img = null;
+        Text title = null;
+        Text description = null;
+        
+        for (var i = 0; i < content.transform.childCount; i++)
+        {
+            var child = content.transform.GetChild(i);
+            if (child.name == "Image") img = child.gameObject.GetComponent<Image>();
+            if (child.name == "Title") title = child.gameObject.GetComponent<Text>();
+            if (child.name == "Description") description = child.gameObject.GetComponent<Text>();
+        }
+        
         var closeButton = descriptionPopup.transform.GetChild(1).gameObject.GetComponent<Image>();
 
         img.sprite = card.sprite;

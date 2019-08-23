@@ -305,8 +305,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1670149531}
   - component: {fileID: 1670149534}
-  - component: {fileID: 1670149533}
-  - component: {fileID: 1670149532}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -328,32 +326,6 @@ Transform:
   m_Father: {fileID: 1414870679}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1670149532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670149530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f248b4d4f9f54030a1e987acd3a82134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _listAlignmentsScript: {fileID: 0}
---- !u!114 &1670149533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670149530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00e864dc228848a0a2b5031ce399a972, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _listAlignmentsScript: {fileID: 0}
 --- !u!114 &1670149534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +356,7 @@ MonoBehaviour:
   - {fileID: 2787003419951818088, guid: 75dadcd7ee7fb8091a3d8783bee34776, type: 3}
   - {fileID: 6944920423122677724, guid: 25e5d57323553382693c5a1dc35cf1d8, type: 3}
   - {fileID: 5812881213542225656, guid: 40370f2db83c397699db16964b070b41, type: 3}
-  - {fileID: 8324412862868898354, guid: 6c972957215bb3b2d9a1ad94759dd677, type: 3}
+  - {fileID: 8167323261333638659, guid: 6c972957215bb3b2d9a1ad94759dd677, type: 3}
   - {fileID: 1646869320184237415, guid: 903c8f4d4c99b3011925e93f5d4916e3, type: 3}
   - {fileID: 5318994551903795131, guid: 24ebc09c3bf888809925b7ed0addf4f4, type: 3}
   - {fileID: 92079587346511154, guid: dc322e96e432a27da8e331c0eb03d9d2, type: 3}
