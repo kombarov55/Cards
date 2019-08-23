@@ -400,6 +400,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1c4b079dae372a911af34c22b25f3794, type: 3}
   shirt: {fileID: 21300000, guid: 258a24f88590110fcb93e41d9e5be6c0, type: 3}
   deck: {fileID: 217426954}
+  trashDeck: {fileID: 1785146617}
   alignmentPrefabs:
   - {fileID: 7780533483254456247, guid: bf8fff5cdc28b6a2197eb0d4814d67c3, type: 3}
   - {fileID: 2076020946836393477, guid: 201a5fd4646c0d8e5bf4c7e8c285b5e9, type: 3}
@@ -660,6 +661,7 @@ RectTransform:
   - {fileID: 217426955}
   - {fileID: 63135963}
   - {fileID: 1803137129}
+  - {fileID: 1785146618}
   m_Father: {fileID: 2080259746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -851,6 +853,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1785146617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785146618}
+  m_Layer: 5
+  m_Name: TrashDeck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1785146618
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785146617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 247492302}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -221, y: -250}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1803137128
 GameObject:
   m_ObjectHideFlags: 0

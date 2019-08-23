@@ -11,8 +11,11 @@ namespace DefaultNamespace
         public void OnPointerClick(PointerEventData eventData)
         {
             var cardService = scripts.GetComponent<CardService>();
-            
-            cardService.RenderAlignment(cardService.currentAlignmentName);
+
+            if (cardService.IsAlignmentRendered() == false)
+            {
+                cardService.RenderAlignment(cardService.currentAlignmentName);
+            }
         }
     }
 }

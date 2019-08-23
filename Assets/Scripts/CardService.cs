@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,7 @@ public class CardService : MonoBehaviour
     public Sprite shirt;
     
     public GameObject deck;
+    public GameObject trashDeck;
 
     public List<GameObject> alignmentPrefabs;
     public GameObject rootPanel;
@@ -42,18 +44,15 @@ public class CardService : MonoBehaviour
 
     public void Clear()
     {
-        if (currentAlignment != null)
-        {
-            Destroy(currentAlignment);
-        }
+        StartCoroutine(ClearCoroutine(currentCardGameObjects));
 
-        usedCards.Clear();
-        currentCardGameObjects.Clear();
-    }
-
-    public void MoveAllToDestPositions()
-    {
-        _transformHelper.MoveAllToDestPositions(currentCardGameObjects);
+//        if (currentAlignment != null)
+//        {
+//            Destroy(currentAlignment);
+//        }
+//
+//        usedCards.Clear();
+//        currentCardGameObjects.Clear();
     }
 
     public void RenderAlignment(string alignmentName)
@@ -72,7 +71,6 @@ public class CardService : MonoBehaviour
 
     public void RenderAlignment(GameObject alignment)
     {
-        Clear();
         var alignmentName = alignment.name;
         currentAlignment = Instantiate(alignment, rootPanel.transform);
         currentAlignment.name = alignmentName;
@@ -133,6 +131,11 @@ public class CardService : MonoBehaviour
         SceneManager.LoadScene("AlignmentSelection");
     }
 
+    public bool IsAlignmentRendered()
+    {
+        return currentCardGameObjects.Count != 0;
+    }
+
     private Card GetRandomCard()
     {
         var rand = Random.Range(0, cards.Count);
@@ -145,5 +148,17 @@ public class CardService : MonoBehaviour
 
         usedCards.Add(result);
         return result;
+    }
+
+    private IEnumerator ClearCoroutine(List<GameObject> currentCardGameObjects)
+    {
+        yield return _transformHelper.MoveAllToTrashDeckCoroutine(currentCardGameObjects);
+        if (currentAlignment != null)
+        {
+            Destroy(currentAlignment);
+        }
+
+        usedCards.Clear();
+        currentCardGameObjects.Clear();
     }
 }

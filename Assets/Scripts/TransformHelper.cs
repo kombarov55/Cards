@@ -6,6 +6,14 @@ namespace DefaultNamespace
 {
     public class TransformHelper : MonoBehaviour
     {
+
+        private GameObject _trashDeck;
+
+        public void Start()
+        {
+            _trashDeck = GetComponent<CardService>().trashDeck;
+        }
+        
         public void MoveAllToDeck(List<GameObject> cardObjects, Vector3 deck)
         {
             foreach (var cardObject in cardObjects)
@@ -17,6 +25,11 @@ namespace DefaultNamespace
         public void MoveAllToDestPositions(List<GameObject> cardObjects)
         {
             StartCoroutine(MoveAllToDestPositionsCoroutine(cardObjects));
+        }
+        
+        public void MoveAllToTrashDeck(List<GameObject> cardObjects)
+        {
+            StartCoroutine(MoveAllToTrashDeckCoroutine(cardObjects));
         }
 
         private IEnumerator MoveAllToDestPositionsCoroutine(List<GameObject> cardObjects)
@@ -32,6 +45,19 @@ namespace DefaultNamespace
                 StartCoroutine(RotateNTimes(cardObject, 1, time,  cardObject.transform.eulerAngles.z));
                 yield return new WaitForSeconds(0.1f);
             }
+        }
+        
+        public IEnumerator MoveAllToTrashDeckCoroutine(List<GameObject> cardObjects)
+        {
+            float time = 0.5f;
+            
+            foreach (var cardObject in cardObjects)
+            {
+                StartCoroutine(MoveOverSeconds(cardObject, _trashDeck.transform.position, time));
+                StartCoroutine(RotateNTimes(cardObject, 5, time,  cardObject.transform.eulerAngles.z));
+            }
+            
+            yield return new WaitForSeconds(time);
         }
         
         private IEnumerator MoveOverSpeed(GameObject objectToMove, Vector3 end, float speed) {
