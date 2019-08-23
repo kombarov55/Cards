@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
@@ -26,11 +27,6 @@ namespace DefaultNamespace
         {
             StartCoroutine(MoveAllToDestPositionsCoroutine(cardObjects));
         }
-        
-        public void MoveAllToTrashDeck(List<GameObject> cardObjects)
-        {
-            StartCoroutine(MoveAllToTrashDeckCoroutine(cardObjects));
-        }
 
         private IEnumerator MoveAllToDestPositionsCoroutine(List<GameObject> cardObjects)
         {
@@ -47,7 +43,7 @@ namespace DefaultNamespace
             }
         }
         
-        public IEnumerator MoveAllToTrashDeckCoroutine(List<GameObject> cardObjects)
+        public IEnumerator ClearCoroutine(List<GameObject> cardObjects, List<Text> textElements)
         {
             float time = 0.5f;
             
@@ -55,6 +51,11 @@ namespace DefaultNamespace
             {
                 StartCoroutine(MoveOverSeconds(cardObject, _trashDeck.transform.position, time));
                 StartCoroutine(RotateNTimes(cardObject, 5, time,  cardObject.transform.eulerAngles.z));
+            }
+
+            foreach (var text in textElements)
+            {
+                StartCoroutine(FadeOutCoroutine(text, time));
             }
             
             yield return new WaitForSeconds(time);
@@ -81,6 +82,16 @@ namespace DefaultNamespace
                 yield return new WaitForEndOfFrame();
             }
             objectToMove.transform.position = end;
+        }
+
+        private IEnumerator FadeOutCoroutine(Text text, float fadeOutTime)
+        { 
+            Color originalColor = text.color;
+            for (float t = 0.01f; t < fadeOutTime; t += Time.deltaTime)
+            {
+                text.color = Color.Lerp(originalColor, Color.clear, Mathf.Min(1, t/fadeOutTime));
+                yield return null;
+            }
         }
         
         

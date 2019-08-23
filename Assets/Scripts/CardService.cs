@@ -152,7 +152,9 @@ public class CardService : MonoBehaviour
 
     private IEnumerator ClearCoroutine(List<GameObject> currentCardGameObjects)
     {
-        yield return _transformHelper.MoveAllToTrashDeckCoroutine(currentCardGameObjects);
+        List<Text> allTexts = new List<Text>(currentAlignment.gameObject.GetComponentsInChildren<Text>()); 
+        
+        yield return _transformHelper.ClearCoroutine(currentCardGameObjects, allTexts);
         if (currentAlignment != null)
         {
             Destroy(currentAlignment);
