@@ -402,11 +402,11 @@ MonoBehaviour:
   deck: {fileID: 217426954}
   trashDeck: {fileID: 1785146617}
   alignmentPrefabs:
-  - {fileID: 7780533483254456247, guid: bf8fff5cdc28b6a2197eb0d4814d67c3, type: 3}
+  - {fileID: 8372606706808818699, guid: acba9c094c6565e48a5749c5f763c2a9, type: 3}
   - {fileID: 2076020946836393477, guid: 201a5fd4646c0d8e5bf4c7e8c285b5e9, type: 3}
   - {fileID: 2734570640662189402, guid: 278ce32ed0f6e67ee890ad7a4769faec, type: 3}
   - {fileID: 8716481757118016516, guid: 07edcaa645fc239b2b88b06044e58dc5, type: 3}
-  - {fileID: 6042903948829072008, guid: 67fc44e4fb5a8beb4be4bb8063320ab7, type: 3}
+  - {fileID: 9058042124914159935, guid: 67fc44e4fb5a8beb4be4bb8063320ab7, type: 3}
   - {fileID: 7606339315943028248, guid: 138f428a2920c2bafb444798a5fec06f, type: 3}
   rootPanel: {fileID: 2080259742}
   descriptionPopupPrefab: {fileID: 1487274757504704785, guid: dc31fcac071da572394e4697e559da12,
