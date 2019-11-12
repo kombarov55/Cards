@@ -11,7 +11,7 @@ namespace DefaultNamespace
         Runes
     }
 
-    public class ListAlignmentsScript : MonoBehaviour
+    public class PlayingCardsMainMenuScript : MonoBehaviour
     {
         public GameObject buttonPrefab;
         public GameObject scrollviewPrefab;
@@ -25,8 +25,9 @@ namespace DefaultNamespace
 
         public void Start()
         {
+            ListAlignmentNames(AlignmentType.PlayingCards);
             instantiatedAlignementTypeSelection = Instantiate(alignmentTypeSelectionPrefab, transform.parent);
-            addButtonsOnclicks(instantiatedAlignementTypeSelection);
+//            addButtonsOnclicks(instantiatedAlignementTypeSelection);
         }
         
 
@@ -54,18 +55,19 @@ namespace DefaultNamespace
 
         private void ListAlignmentNames(AlignmentType alignmentType)
         {
-            changeActiveView();
+//            changeActiveView();
+            instantiatedScrollview = Instantiate(scrollviewPrefab, transform.parent);
             addAlignmentNameButtons(alignmentType);
         }
 
         private void changeActiveView()
         {
-            Destroy(instantiatedAlignementTypeSelection);
-            instantiatedScrollview = Instantiate(scrollviewPrefab, transform.parent);
+//            Destroy(instantiatedAlignementTypeSelection);
+//            instantiatedScrollview = Instantiate(scrollviewPrefab, transform.parent);
 
-            var button = instantiatedScrollview.transform.GetChild(1).gameObject;
-            button.AddComponent<ActionBehaviour>();
-            button.GetComponent<ActionBehaviour>().action = () => { changeViewBack(); };
+//            var button = instantiatedScrollview.transform.GetChild(1).gameObject;
+//            button.AddComponent<ActionBehaviour>();
+//            button.GetComponent<ActionBehaviour>().action = () => { changeViewBack(); };
         }
         
         private void changeViewBack()

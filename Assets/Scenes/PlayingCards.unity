@@ -412,6 +412,7 @@ MonoBehaviour:
   descriptionPopupPrefab: {fileID: 1487274757504704785, guid: dc31fcac071da572394e4697e559da12,
     type: 3}
   currentAlignmentName: 
+  prevSceneName: PlayingCardsAlignmentSelection
 --- !u!4 &165089967
 Transform:
   m_ObjectHideFlags: 0

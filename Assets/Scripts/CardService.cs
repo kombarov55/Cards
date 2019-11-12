@@ -21,6 +21,8 @@ public class CardService : MonoBehaviour
     public GameObject descriptionPopupPrefab;
 
     public string currentAlignmentName;
+
+    public string prevSceneName;
     
     private GameObject currentAlignment;
     private GameObject descriptionPopup;
@@ -128,7 +130,7 @@ public class CardService : MonoBehaviour
 
     public void OnBackClicked()
     {
-        SceneManager.LoadScene("AlignmentSelection");
+        SceneManager.LoadScene(prevSceneName);
     }
 
     public bool IsAlignmentRendered()
