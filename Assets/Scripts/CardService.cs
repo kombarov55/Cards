@@ -117,7 +117,7 @@ public class CardService : MonoBehaviour
             if (child.name == "Description") description = child.gameObject.GetComponent<Text>();
         }
         
-        var closeButton = descriptionPopup.transform.GetChild(1).gameObject.GetComponent<Image>();
+        var closeButton = descriptionPopup.transform.GetChild(1).gameObject.GetComponent<Button>();
 
         img.sprite = card.sprite;
         title.text = card.title;
