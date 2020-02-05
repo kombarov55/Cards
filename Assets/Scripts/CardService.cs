@@ -99,41 +99,6 @@ public class CardService : MonoBehaviour
         _transformHelper.MoveAllToDeck(currentCardGameObjects, deck.transform.position);
         _transformHelper.MoveAllToDestPositions(currentCardGameObjects);
     }
-    
-    public static void RenderAlignment(GameObject alignment, GameObject rootPanel, List<Card> cards)
-    {
-        var alignmentName = alignment.name;
-        var currentAlignment = Instantiate(alignment, rootPanel.transform);
-        currentAlignment.name = alignmentName;
-
-        var images = currentAlignment.GetComponentsInChildren<Image>();
-
-        for (var i = 0; i < images.Length; i++)
-        {
-            var image = images[i];
-            cards[i];
-        }
-        
-        foreach (var image in images)
-        {
-            var card = GetRandomCard();
-            image.sprite = shirt;
-            var userData = image.GetComponent<UserData>();
-            userData.card = card;
-            userData.cardService = this;
-            userData.destPosition = image.transform.position;
-            userData.destDegree = image.transform.eulerAngles.z;
-        }
-
-        
-        foreach (var image in images)
-        {
-            currentCardGameObjects.Add(image.gameObject);
-        }
-        
-        _transformHelper.MoveAllToDeck(currentCardGameObjects, deck.transform.position);
-        _transformHelper.MoveAllToDestPositions(currentCardGameObjects);
-    }
 
     public void OpenDescription(Card card)
     {

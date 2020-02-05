@@ -44,11 +44,20 @@ namespace DefaultNamespace
 
         private static List<Card> BindSpritesToCardObjects(List<Card> cards, List<Sprite> sprites)
         {
-            foreach (var card in cards)
+            List<Card> rs = new List<Card>();
+            
+            foreach (var sprite in sprites)
             {
-                card.sprite = FindSpriteByName(sprites, card.title);
+                var card = FindCardByName(cards, sprite.name);
+                card.sprite = sprite;
+                rs.Add(card);
             }
-            return cards;
+        
+//            foreach (var card in cards)
+//            {
+//                card.sprite = FindSpriteByName(sprites, card.title);
+//            }
+            return rs;
         }
 
         private static Sprite FindSpriteByName(List<Sprite> sprites, string name)
@@ -58,6 +67,19 @@ namespace DefaultNamespace
                 if (sprite.name == name)
                 {
                     return sprite;
+                }
+            }
+
+            throw new Exception("Не найден спрайт с именем " + name);
+        }
+        
+        private static Card FindCardByName(List<Card> cards, string name)
+        {
+            foreach (var card in cards)
+            {
+                if (card.title == name)
+                {
+                    return card;
                 }
             }
 

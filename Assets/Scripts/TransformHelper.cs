@@ -8,13 +8,6 @@ namespace DefaultNamespace
     public class TransformHelper : MonoBehaviour
     {
 
-        private GameObject _trashDeck;
-
-        public void Start()
-        {
-            _trashDeck = GetComponent<CardService>().trashDeck;
-        }
-        
         public void MoveAllToDeck(List<GameObject> cardObjects, Vector3 deck)
         {
             foreach (var cardObject in cardObjects)
@@ -43,13 +36,13 @@ namespace DefaultNamespace
             }
         }
         
-        public IEnumerator ClearCoroutine(List<GameObject> cardObjects, List<Text> textElements)
+        public IEnumerator ClearCoroutine(List<GameObject> cardObjects, List<Text> textElements, GameObject trashDeck)
         {
             float time = 0.5f;
             
             foreach (var cardObject in cardObjects)
             {
-                StartCoroutine(MoveOverSeconds(cardObject, _trashDeck.transform.position, time));
+                StartCoroutine(MoveOverSeconds(cardObject, trashDeck.transform.position, time));
                 StartCoroutine(RotateNTimes(cardObject, 5, time,  cardObject.transform.eulerAngles.z));
             }
 

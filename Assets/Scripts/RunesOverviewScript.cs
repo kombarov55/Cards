@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
-    public class PlayingCardsOverviewScript : MonoBehaviour
+    public class RunesOverviewScript : MonoBehaviour
     {
-        public string pathToXml = "PlayingCards.xml";
-        public string prevSceneName = "PlayingCardsAlignmentSelection";
+        public string pathToXml = "Runes";
+        public string prevSceneName = "RunesAlignmentSelection";
         public List<Sprite> sprites;
         public GameObject playingCardsOverviewAlignment;
         public GameObject rootPanel;

@@ -7,12 +7,9 @@ namespace DefaultNamespace
 {
     public class PlayingCardsSelectionScript : MonoBehaviour
     {
-
-        public List<GameObject> alignmentPrefabs;
-        
-        public void Start()
+        public void OnBackClicked()
         {
-
+            SceneManager.LoadScene("MainMenuPlayingCards");
         }
     }
 }

@@ -408,6 +408,7 @@ MonoBehaviour:
   - {fileID: 8716481757118016516, guid: 07edcaa645fc239b2b88b06044e58dc5, type: 3}
   - {fileID: 9058042124914159935, guid: 67fc44e4fb5a8beb4be4bb8063320ab7, type: 3}
   - {fileID: 7606339315943028248, guid: 138f428a2920c2bafb444798a5fec06f, type: 3}
+  - {fileID: 6152524278601908155, guid: 88b7ffc68b510f6b1935a4cf337b497c, type: 3}
   rootPanel: {fileID: 2080259742}
   descriptionPopupPrefab: {fileID: 1487274757504704785, guid: dc31fcac071da572394e4697e559da12,
     type: 3}
